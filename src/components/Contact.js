@@ -72,9 +72,12 @@ const Contact = () => {
                       <p className="text-brown-600 mb-1">원두 납품 문의</p>
                       <a 
                         href="mailto:bfield20@daum.net" 
-                        className="text-brown-700 font-medium hover:text-brown-800 transition-colors duration-200"
+                        className="inline-flex items-center space-x-2 text-brown-700 font-medium hover:text-brown-800 hover:underline transition-all duration-200 bg-brown-50 hover:bg-brown-100 px-3 py-2 rounded-lg border border-brown-200 hover:border-brown-300"
                       >
-                        bfield20@daum.net
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <span>bfield20@daum.net</span>
                       </a>
                     </div>
                     <div>
@@ -83,9 +86,12 @@ const Contact = () => {
                         href="https://smartstore.naver.com/brownfield" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-green-600 font-medium hover:text-green-700 transition-colors duration-200"
+                        className="inline-flex items-center space-x-2 text-green-600 font-medium hover:text-green-700 hover:underline transition-all duration-200 bg-green-50 hover:bg-green-100 px-3 py-2 rounded-lg border border-green-200 hover:border-green-300"
                       >
-                        네이버 스마트스토어
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                        </svg>
+                        <span>네이버 스마트스토어</span>
                       </a>
                     </div>
                   </div>
