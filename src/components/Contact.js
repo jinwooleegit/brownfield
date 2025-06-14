@@ -5,13 +5,17 @@ const Contact = () => {
     <section id="contact" className="section-padding bg-coffee-50">
       <div className="container-max">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-serif text-brown-800 mb-6">
-            찾아오시는 길
-          </h2>
-          <p className="text-xl text-brown-600 max-w-2xl mx-auto">
-            거제도에서 특별한 커피 경험을 기다리고 있습니다
-          </p>
+        <div className="text-center mb-20">
+          <div className="inline-block">
+            <span className="text-coffee-600 font-medium text-lg tracking-wider uppercase mb-4 block">Contact</span>
+            <h2 className="text-5xl md:text-7xl font-bold font-serif text-brown-800 mb-6 relative">
+              찾아오시는 길
+              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-coffee-400 to-coffee-600 rounded-full"></div>
+            </h2>
+            <p className="text-xl text-brown-600 max-w-2xl mx-auto leading-relaxed">
+              거제도에서 특별한 커피 경험을 기다리고 있습니다
+            </p>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">

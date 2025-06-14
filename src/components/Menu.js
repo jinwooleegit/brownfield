@@ -45,13 +45,17 @@ const Menu = () => {
     <section id="menu" className="section-padding bg-white">
       <div className="container-max">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-serif text-brown-800 mb-6">
-            메뉴
-          </h2>
-          <p className="text-xl text-brown-600 max-w-2xl mx-auto">
-            신선하게 로스팅된 원두로 만든 특별한 커피와 정성스럽게 준비한 디저트를 만나보세요
-          </p>
+        <div className="text-center mb-20">
+          <div className="inline-block">
+            <span className="text-coffee-600 font-medium text-lg tracking-wider uppercase mb-4 block">Menu</span>
+            <h2 className="text-5xl md:text-7xl font-bold font-serif text-brown-800 mb-6 relative">
+              메뉴
+              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-coffee-400 to-coffee-600 rounded-full"></div>
+            </h2>
+            <p className="text-xl text-brown-600 max-w-2xl mx-auto leading-relaxed">
+              신선하게 로스팅된 원두로 만든 특별한 커피와 정성스럽게 준비한 디저트를 만나보세요
+            </p>
+          </div>
         </div>
 
         {/* Menu Grid */}

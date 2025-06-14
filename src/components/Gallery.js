@@ -58,13 +58,17 @@ const Gallery = () => {
     <section id="gallery" className="section-padding bg-gradient-to-br from-coffee-50 to-brown-50">
       <div className="container-max">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-serif text-brown-800 mb-6">
-            갤러리
-          </h2>
-          <p className="text-xl text-brown-600 max-w-2xl mx-auto">
-            Brownfield Roasters의 일상과 특별한 순간들을 만나보세요
-          </p>
+        <div className="text-center mb-20">
+          <div className="inline-block">
+            <span className="text-coffee-600 font-medium text-lg tracking-wider uppercase mb-4 block">Gallery</span>
+            <h2 className="text-5xl md:text-7xl font-bold font-serif text-brown-800 mb-6 relative">
+              갤러리
+              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-coffee-400 to-coffee-600 rounded-full"></div>
+            </h2>
+            <p className="text-xl text-brown-600 max-w-2xl mx-auto leading-relaxed">
+              Brownfield Roasters의 일상과 특별한 순간들을 만나보세요
+            </p>
+          </div>
         </div>
 
         {/* Gallery Grid */}
