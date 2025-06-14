@@ -42,7 +42,7 @@ const Header = () => {
                 <h1 className={`text-2xl font-bold font-serif transition-all duration-300 ${
                   isScrolled ? 'text-brown-800' : 'text-white drop-shadow-lg'
                 } group-hover:scale-105`}>
-                  Brownfield
+                  브라운필드
                 </h1>
                 <span className={`text-sm font-medium tracking-wider transition-all duration-300 ${
                   isScrolled ? 'text-coffee-600' : 'text-coffee-200'

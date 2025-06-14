@@ -43,15 +43,15 @@ const Hero = () => {
             {/* Logo with Enhanced Design */}
             <div className="flex justify-center mb-12 group">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-coffee-400 to-coffee-600 rounded-full blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500 scale-150"></div>
-                <div className="relative bg-white/10 backdrop-blur-sm rounded-full p-4 border border-white/20 shadow-2xl group-hover:scale-110 transition-all duration-500">
+                <div className="absolute inset-0 bg-gradient-to-r from-coffee-400 to-coffee-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500 scale-150"></div>
+                <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 shadow-2xl group-hover:scale-110 transition-all duration-500">
                   <img 
                     src="/images/brownfield-logo.jpg"
                     alt="Brownfield Roasters Logo"
-                    className="h-24 w-24 object-cover rounded-full shadow-lg"
+                    className="h-20 w-auto object-contain shadow-lg"
                   />
                 </div>
-                <div className="absolute -inset-4 bg-gradient-to-r from-coffee-400/20 via-transparent to-coffee-600/20 rounded-full animate-pulse"></div>
+                <div className="absolute -inset-6 bg-gradient-to-r from-coffee-400/20 via-transparent to-coffee-600/20 rounded-2xl animate-pulse"></div>
               </div>
             </div>
             
