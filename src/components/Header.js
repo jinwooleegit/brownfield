@@ -25,8 +25,8 @@ const Header = () => {
     <header className={`fixed w-full z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
     }`}>
-      <div className="container-max">
-        <div className="flex items-center justify-between py-4">
+      <div className="container-max px-6 lg:px-8">
+        <div className="flex items-center justify-between py-6">
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex flex-col group">
@@ -44,10 +44,10 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-10">
             <button
               onClick={() => scrollToSection('home')}
-              className={`font-medium transition-colors duration-300 hover:text-brown-600 ${
+              className={`font-medium transition-colors duration-300 hover:text-brown-600 px-2 py-1 ${
                 isScrolled ? 'text-brown-700' : 'text-white'
               }`}
             >
@@ -55,7 +55,7 @@ const Header = () => {
             </button>
             <button
               onClick={() => scrollToSection('about')}
-              className={`font-medium transition-colors duration-300 hover:text-brown-600 ${
+              className={`font-medium transition-colors duration-300 hover:text-brown-600 px-2 py-1 ${
                 isScrolled ? 'text-brown-700' : 'text-white'
               }`}
             >
@@ -63,7 +63,7 @@ const Header = () => {
             </button>
             <button
               onClick={() => scrollToSection('menu')}
-              className={`font-medium transition-colors duration-300 hover:text-brown-600 ${
+              className={`font-medium transition-colors duration-300 hover:text-brown-600 px-2 py-1 ${
                 isScrolled ? 'text-brown-700' : 'text-white'
               }`}
             >
@@ -71,7 +71,7 @@ const Header = () => {
             </button>
             <button
               onClick={() => scrollToSection('gallery')}
-              className={`font-medium transition-colors duration-300 hover:text-brown-600 ${
+              className={`font-medium transition-colors duration-300 hover:text-brown-600 px-2 py-1 ${
                 isScrolled ? 'text-brown-700' : 'text-white'
               }`}
             >
@@ -79,7 +79,7 @@ const Header = () => {
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className={`font-medium transition-colors duration-300 hover:text-brown-600 ${
+              className={`font-medium transition-colors duration-300 hover:text-brown-600 px-2 py-1 ${
                 isScrolled ? 'text-brown-700' : 'text-white'
               }`}
             >
@@ -89,7 +89,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="md:hidden p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <div className={`w-6 h-0.5 mb-1 transition-colors duration-300 ${
@@ -106,35 +106,35 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-white border-t border-brown-100">
-            <nav className="py-4 space-y-2">
+          <div className="md:hidden bg-white border-t border-brown-100 mx-6 rounded-b-lg shadow-lg">
+            <nav className="py-6 space-y-1">
               <button
                 onClick={() => scrollToSection('home')}
-                className="block w-full text-left px-4 py-2 text-brown-700 hover:bg-brown-50"
+                className="block w-full text-left px-6 py-3 text-brown-700 hover:bg-brown-50 transition-colors duration-200"
               >
                 홈
               </button>
               <button
                 onClick={() => scrollToSection('about')}
-                className="block w-full text-left px-4 py-2 text-brown-700 hover:bg-brown-50"
+                className="block w-full text-left px-6 py-3 text-brown-700 hover:bg-brown-50 transition-colors duration-200"
               >
                 소개
               </button>
               <button
                 onClick={() => scrollToSection('menu')}
-                className="block w-full text-left px-4 py-2 text-brown-700 hover:bg-brown-50"
+                className="block w-full text-left px-6 py-3 text-brown-700 hover:bg-brown-50 transition-colors duration-200"
               >
                 메뉴
               </button>
               <button
                 onClick={() => scrollToSection('gallery')}
-                className="block w-full text-left px-4 py-2 text-brown-700 hover:bg-brown-50"
+                className="block w-full text-left px-6 py-3 text-brown-700 hover:bg-brown-50 transition-colors duration-200"
               >
                 갤러리
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="block w-full text-left px-4 py-2 text-brown-700 hover:bg-brown-50"
+                className="block w-full text-left px-6 py-3 text-brown-700 hover:bg-brown-50 transition-colors duration-200"
               >
                 연락처
               </button>
