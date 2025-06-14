@@ -29,11 +29,18 @@ const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className={`text-2xl font-bold font-serif transition-colors duration-300 ${
-              isScrolled ? 'text-brown-800' : 'text-white'
-            }`}>
-              Brownfield Roasters
-            </h1>
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/images/brownfiled-logo.jpg"
+                alt="Brownfield Roasters Logo"
+                className="h-10 w-10 object-contain rounded-full"
+              />
+              <h1 className={`text-2xl font-bold font-serif transition-colors duration-300 ${
+                isScrolled ? 'text-brown-800' : 'text-white'
+              }`}>
+                Brownfield Roasters
+              </h1>
+            </div>
           </div>
 
           {/* Desktop Navigation */}

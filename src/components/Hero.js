@@ -32,6 +32,15 @@ const Hero = () => {
         <div className="container-max">
           {/* Main Content */}
           <div className="max-w-4xl mx-auto">
+            {/* Logo */}
+            <div className="flex justify-center mb-8">
+              <img 
+                src="/images/brownfiled-logo.jpg"
+                alt="Brownfield Roasters Logo"
+                className="h-20 w-20 object-contain rounded-full shadow-lg border-4 border-white/20"
+              />
+            </div>
+            
             <h1 className="text-5xl md:text-7xl font-bold font-serif mb-8 leading-tight">
               Brownfield
               <span className="block text-coffee-200">Roasters</span>
