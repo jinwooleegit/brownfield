@@ -29,17 +29,27 @@ const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="flex items-center space-x-3">
-              <img 
-                src="/images/brownfiled-logo.jpg"
-                alt="Brownfield Roasters Logo"
-                className="h-10 w-10 object-contain rounded-full"
-              />
-              <h1 className={`text-2xl font-bold font-serif transition-colors duration-300 ${
-                isScrolled ? 'text-brown-800' : 'text-white'
-              }`}>
-                Brownfield Roasters
-              </h1>
+            <div className="flex items-center space-x-4 group">
+              <div className="relative">
+                <img 
+                  src="/images/brownfield-logo.jpg"
+                  alt="Brownfield Roasters Logo"
+                  className="h-12 w-12 object-cover rounded-full border-2 border-coffee-300 shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl group-hover:border-coffee-400"
+                />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-coffee-200/20 to-coffee-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="flex flex-col">
+                <h1 className={`text-2xl font-bold font-serif transition-all duration-300 ${
+                  isScrolled ? 'text-brown-800' : 'text-white drop-shadow-lg'
+                } group-hover:scale-105`}>
+                  Brownfield
+                </h1>
+                <span className={`text-sm font-medium tracking-wider transition-all duration-300 ${
+                  isScrolled ? 'text-coffee-600' : 'text-coffee-200'
+                }`}>
+                  ROASTERS
+                </span>
+              </div>
             </div>
           </div>
 
