@@ -82,11 +82,35 @@ const About = () => {
 
           {/* Image/Visual Content */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-brown-200 to-brown-300 rounded-3xl p-8 h-96 flex items-center justify-center">
-              <div className="text-center text-brown-800">
-                <div className="text-8xl mb-4">☕</div>
+            {/* Main Image */}
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <img 
+                src="/images/SnapInsta.to_497679542_18052712129348183_413711426659425542_n.jpg"
+                alt="Brownfield Roasters Coffee"
+                className="w-full h-96 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+              <div className="absolute bottom-6 left-6 text-white">
                 <h3 className="text-2xl font-serif font-bold mb-2">Brownfield Roasters</h3>
-                <p className="text-lg">거제도의 특별한 커피 경험</p>
+                <p className="text-lg opacity-90">거제도의 특별한 커피 경험</p>
+              </div>
+            </div>
+            
+            {/* Small Gallery Images */}
+            <div className="grid grid-cols-2 gap-4 mt-6">
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src="/images/SnapInsta.to_504064724_18054766886348183_2054420973040220017_n.jpg"
+                  alt="Coffee Beans"
+                  className="w-full h-32 object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src="/images/SnapInsta.to_491493590_18050212685348183_2714887865526726211_n.jpg"
+                  alt="Coffee Making"
+                  className="w-full h-32 object-cover hover:scale-105 transition-transform duration-300"
+                />
               </div>
             </div>
             

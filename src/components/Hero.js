@@ -9,7 +9,18 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-brown-800 via-brown-700 to-brown-900">
+    <section id="home" className="relative min-h-screen flex items-center justify-center">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('/images/SnapInsta.to_486756223_18048158288348183_299248871075608507_n.jpg')`,
+        }}
+      >
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      </div>
+
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{

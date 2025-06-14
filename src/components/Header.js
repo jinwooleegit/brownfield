@@ -63,6 +63,14 @@ const Header = () => {
               메뉴
             </button>
             <button
+              onClick={() => scrollToSection('gallery')}
+              className={`font-medium transition-colors duration-300 hover:text-brown-600 ${
+                isScrolled ? 'text-brown-700' : 'text-white'
+              }`}
+            >
+              갤러리
+            </button>
+            <button
               onClick={() => scrollToSection('contact')}
               className={`font-medium transition-colors duration-300 hover:text-brown-600 ${
                 isScrolled ? 'text-brown-700' : 'text-white'
@@ -110,6 +118,12 @@ const Header = () => {
                 className="block w-full text-left px-4 py-2 text-brown-700 hover:bg-brown-50"
               >
                 메뉴
+              </button>
+              <button
+                onClick={() => scrollToSection('gallery')}
+                className="block w-full text-left px-4 py-2 text-brown-700 hover:bg-brown-50"
+              >
+                갤러리
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
