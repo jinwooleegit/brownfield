@@ -114,12 +114,9 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-brown-700 py-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex justify-center items-center">
             <div className="text-coffee-300 text-sm">
               © {currentYear} Brownfield Roasters. All rights reserved.
-            </div>
-            <div className="text-coffee-300 text-sm">
-              Made with ☕ and ❤️ in Geoje
             </div>
           </div>
         </div>
