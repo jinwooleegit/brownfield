@@ -40,33 +40,34 @@ const Hero = () => {
         <div className="container-max">
           {/* Main Content */}
           <div className="max-w-5xl mx-auto">
-            {/* Logo with Enhanced Design */}
-            <div className="flex justify-center mb-12 group">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-coffee-400 to-coffee-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500 scale-150"></div>
-                <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 shadow-2xl group-hover:scale-110 transition-all duration-500">
-                  <img 
-                    src="/images/brownfield-logo.jpg"
-                    alt="Brownfield Roasters 로고 - 거제 스페셜티 커피 로스터리"
-                    loading="eager"
-                    decoding="async"
-                    className="h-20 w-auto object-contain shadow-lg"
-                  />
+            {/* Enhanced Title with Integrated Logo */}
+            <div className="mb-12 text-center">
+              {/* Logo integrated with title */}
+              <div className="flex flex-col items-center mb-8">
+                <div className="group mb-6">
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-gradient-to-r from-coffee-400 to-coffee-600 rounded-xl blur-lg opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
+                    <div className="relative bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 shadow-xl group-hover:scale-105 transition-all duration-500">
+                      <img 
+                        src="/images/brownfield-logo.jpg"
+                        alt="Brownfield Roasters 로고 - 거제 스페셜티 커피 로스터리"
+                        loading="eager"
+                        decoding="async"
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div className="absolute -inset-6 bg-gradient-to-r from-coffee-400/20 via-transparent to-coffee-600/20 rounded-2xl animate-pulse"></div>
+                
+                <h1 className="text-6xl md:text-8xl font-bold font-serif leading-tight">
+                  <span className="bg-gradient-to-r from-white via-coffee-100 to-coffee-200 bg-clip-text text-transparent animate-gradient-x">
+                    브라운필드
+                  </span>
+                  <span className="block bg-gradient-to-r from-coffee-200 via-coffee-300 to-coffee-400 bg-clip-text text-transparent animate-gradient-x-delayed">
+                    ROASTERS
+                  </span>
+                </h1>
               </div>
-            </div>
-            
-            {/* Enhanced Title */}
-            <div className="mb-12">
-              <h1 className="text-6xl md:text-8xl font-bold font-serif mb-4 leading-tight">
-                <span className="bg-gradient-to-r from-white via-coffee-100 to-coffee-200 bg-clip-text text-transparent animate-gradient-x">
-                  Brownfield
-                </span>
-                <span className="block bg-gradient-to-r from-coffee-200 via-coffee-300 to-coffee-400 bg-clip-text text-transparent animate-gradient-x-delayed">
-                  Roasters
-                </span>
-              </h1>
               <div className="w-32 h-1 bg-gradient-to-r from-coffee-400 to-coffee-600 mx-auto rounded-full shadow-lg"></div>
             </div>
             
