@@ -36,12 +36,12 @@ const Hero = () => {
         }}></div>
       </div>
 
-      <div className="relative z-10 text-center text-white section-padding">
+      <div className="relative z-10 text-center text-white section-padding pt-32 md:pt-40">
         <div className="container-max">
           {/* Main Content */}
           <div className="max-w-5xl mx-auto">
             {/* Enhanced Title without Logo */}
-            <div className="mb-12 text-center">
+            <div className="mb-16 text-center">
               <div className="flex flex-col items-center mb-8">
                 <h1 className="text-6xl md:text-8xl font-bold font-serif leading-tight mb-6">
                   <span className="bg-gradient-to-r from-white via-coffee-100 to-coffee-200 bg-clip-text text-transparent animate-gradient-x">
@@ -56,7 +56,7 @@ const Hero = () => {
             </div>
             
             {/* Enhanced Description */}
-            <div className="mb-16 space-y-6">
+            <div className="mb-20 space-y-6">
               <div className="bg-black/20 backdrop-blur-md rounded-2xl p-8 border border-white/10 shadow-2xl">
                 <p className="text-xl md:text-2xl mb-4 text-coffee-100 leading-relaxed font-light">
                   사람들은 모두 각자의 매개체로 삶을 영위하며,
@@ -71,7 +71,7 @@ const Hero = () => {
             </div>
 
             {/* Enhanced CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-20">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-24">
               <button
                 onClick={() => scrollToSection('menu')}
                 className="group relative bg-gradient-to-r from-coffee-600 to-coffee-700 hover:from-coffee-700 hover:to-coffee-800 text-white px-10 py-5 text-lg font-semibold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 border border-coffee-500"
@@ -89,7 +89,7 @@ const Hero = () => {
             </div>
 
             {/* Enhanced Business Hours */}
-            <div className="bg-gradient-to-br from-black/40 to-brown-900/40 backdrop-blur-lg rounded-3xl p-10 max-w-md mx-auto border border-white/10 shadow-2xl">
+            <div className="bg-gradient-to-br from-black/40 to-brown-900/40 backdrop-blur-lg rounded-3xl p-10 max-w-md mx-auto border border-white/10 shadow-2xl mb-16">
               <div className="flex items-center justify-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-coffee-400 to-coffee-600 rounded-full flex items-center justify-center shadow-lg">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
