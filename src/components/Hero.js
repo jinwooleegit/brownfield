@@ -40,26 +40,10 @@ const Hero = () => {
         <div className="container-max">
           {/* Main Content */}
           <div className="max-w-5xl mx-auto">
-            {/* Enhanced Title with Integrated Logo */}
+            {/* Enhanced Title without Logo */}
             <div className="mb-12 text-center">
-              {/* Logo integrated with title */}
               <div className="flex flex-col items-center mb-8">
-                <div className="group mb-6">
-                  <div className="relative">
-                    <div className="absolute inset-0 bg-gradient-to-r from-coffee-400 to-coffee-600 rounded-xl blur-lg opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
-                    <div className="relative bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 shadow-xl group-hover:scale-105 transition-all duration-500">
-                      <img 
-                        src="/images/brownfield-logo.jpg"
-                        alt="Brownfield Roasters 로고 - 거제 스페셜티 커피 로스터리"
-                        loading="eager"
-                        decoding="async"
-                        className="h-16 w-auto object-contain"
-                      />
-                    </div>
-                  </div>
-                </div>
-                
-                <h1 className="text-6xl md:text-8xl font-bold font-serif leading-tight">
+                <h1 className="text-6xl md:text-8xl font-bold font-serif leading-tight mb-6">
                   <span className="bg-gradient-to-r from-white via-coffee-100 to-coffee-200 bg-clip-text text-transparent animate-gradient-x">
                     브라운필드
                   </span>
