@@ -158,7 +158,7 @@ const Contact = () => {
             {/* Directions */}
             <div className="mt-6 p-4 bg-coffee-50 rounded-lg">
               <h4 className="font-semibold text-brown-800 mb-2">찾아오시는 방법</h4>
-              <ul className="text-sm text-brown-600 space-y-1" role="list">
+              <ul className="text-sm text-brown-600 space-y-1">
                 <li>• 거제시 옥포대첩로 20번지</li>
                 <li>• 대중교통 이용 시 옥포터미널에서 도보 이용</li>
                 <li>• 주차 공간 있음</li>

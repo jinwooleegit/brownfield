@@ -1,0 +1,25 @@
+{
+  "name": "거제 옥포 로스터리카페 브라운필드",
+  "short_name": "브라운필드",
+  "description": "거제 옥포에 위치한 스페셜티 커피 로스터리. 커피라는 갈색의 매개체를 통해 교류하고 소통하는 특별한 공간입니다.",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#6f4e37",
+  "background_color": "#2d1810",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "/",
+  "scope": "/",
+  "lang": "ko",
+  "categories": ["food", "lifestyle", "business"]
+} 
