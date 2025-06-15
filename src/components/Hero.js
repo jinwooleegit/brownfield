@@ -47,7 +47,9 @@ const Hero = () => {
                 <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 shadow-2xl group-hover:scale-110 transition-all duration-500">
                   <img 
                     src="/images/brownfield-logo.jpg"
-                    alt="Brownfield Roasters Logo"
+                    alt="Brownfield Roasters 로고 - 거제 스페셜티 커피 로스터리"
+                    loading="eager"
+                    decoding="async"
                     className="h-20 w-auto object-contain shadow-lg"
                   />
                 </div>

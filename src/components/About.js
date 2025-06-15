@@ -62,7 +62,9 @@ const About = () => {
                   <div className="rounded-xl overflow-hidden">
                     <img 
                       src="/images/SnapInsta.to_497679542_18052712129348183_413711426659425542_n.jpg"
-                      alt="Brownfield Roasters Coffee"
+                      alt="Brownfield Roasters의 신선한 커피와 따뜻한 분위기"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
@@ -78,7 +80,9 @@ const About = () => {
                   <div className="rounded-lg overflow-hidden">
                     <img 
                       src="/images/SnapInsta.to_504064724_18054766886348183_2054420973040220017_n.jpg"
-                      alt="Coffee Beans"
+                      alt="Brownfield Roasters의 고품질 커피 원두"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>
@@ -91,7 +95,9 @@ const About = () => {
                   <div className="rounded-lg overflow-hidden">
                     <img 
                       src="/images/SnapInsta.to_491493590_18050212685348183_2714887865526726211_n.jpg"
-                      alt="Coffee Making"
+                      alt="바리스타의 전문적인 커피 제조 과정"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>
@@ -104,7 +110,9 @@ const About = () => {
                   <div className="rounded-lg overflow-hidden">
                     <img 
                       src="/images/SnapInsta.to_505405965_18055363589348183_4101129269674964028_n.jpg"
-                      alt="Coffee Shop Interior"
+                      alt="Brownfield Roasters의 아늑한 카페 인테리어"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>
@@ -121,7 +129,9 @@ const About = () => {
                   <div className="rounded-xl overflow-hidden">
                     <img 
                       src="/images/SnapInsta.to_486756223_18048158288348183_299248871075608507_n.jpg"
-                      alt="Coffee Shop Atmosphere"
+                      alt="Brownfield Roasters의 편안하고 따뜻한 카페 분위기"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
