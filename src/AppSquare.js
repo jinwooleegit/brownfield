@@ -1,12 +1,6 @@
 import React from 'react';
-import Header from './components/Header';
 import StrengthsSquare from './components/StrengthsSquare';
-import About from './components/About';
-import Menu from './components/Menu';
-import Products from './components/Products';
-import Gallery from './components/Gallery';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import products from './data/products.json';
 
 // 인스타그램 스타일 Hero
 const InstaHero = () => (
@@ -37,14 +31,12 @@ const InstaMenu = () => (
     <div className="bg-white rounded-2xl shadow p-8 w-full max-w-2xl flex flex-col items-center">
       <h2 className="text-2xl font-bold text-gray-900 mb-2">Menu</h2>
       <p className="text-gray-700 text-center mb-4">브라운필드의 인기 메뉴를 만나보세요!</p>
-      {/* 메뉴 이미지는 Products에서 피드처럼 보여주므로 간단 소개만 */}
       <span className="text-xs text-gray-400">#아메리카노 #라떼 #브루잉</span>
     </div>
   </section>
 );
 
 // 인스타그램 스타일 Products (피드형)
-import products from './data/products.json';
 const InstaProducts = () => (
   <section className="py-12 bg-white border-b border-gray-100 flex justify-center">
     <div className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
