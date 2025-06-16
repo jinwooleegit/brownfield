@@ -1,0 +1,26 @@
+{
+  "name": "brownfield-scraper",
+  "version": "1.0.0",
+  "description": "네이버 스마트스토어 상품 정보 스크래핑 서버",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "scrape": "node scraper.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "puppeteer": "^21.5.2",
+    "cheerio": "^1.0.0-rc.12",
+    "axios": "^1.6.2",
+    "node-cron": "^3.0.3",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": ["scraping", "naver", "smartstore", "coffee"],
+  "author": "Brownfield Roasters",
+  "license": "MIT"
+} 

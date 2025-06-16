@@ -134,25 +134,53 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Map Placeholder */}
+          {/* Google Map */}
           <div className="bg-white rounded-2xl p-8 shadow-sm">
             <h3 className="text-xl font-semibold text-brown-800 mb-6">위치</h3>
-            <div 
-              className="bg-gradient-to-br from-brown-100 to-brown-200 rounded-xl h-96 flex items-center justify-center"
-              role="img"
-              aria-label="브라운필드 로스터리 위치 지도 플레이스홀더"
-            >
-              <div className="text-center text-brown-700">
-                <svg className="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            
+            {/* Google Maps Embed */}
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.123456789!2d128.6234567!3d34.8876543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z7Jqc7Y-s64yA7LKp66GcIDIw!5e0!3m2!1sko!2skr!4v1234567890123!5m2!1sko!2skr"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="브라운필드 로스터리 위치"
+                aria-label="브라운필드 로스터리 카페 위치를 보여주는 구글 지도"
+              ></iframe>
+            </div>
+            
+            {/* Map Controls */}
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a
+                href="https://maps.google.com/?q=옥포대첩로+20+거제"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200"
+                aria-label="구글 지도에서 브라운필드 로스터리 위치 보기 (새 창에서 열림)"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <h4 className="text-lg font-semibold mb-2">Brownfield Roasters</h4>
-                <address className="text-brown-600 not-italic">옥포대첩로 20, 거제</address>
-                <p className="text-sm text-brown-500 mt-4">
-                  * 정확한 위치는 네비게이션을 이용해주세요
-                </p>
-              </div>
+                <span>구글 지도에서 보기</span>
+              </a>
+              
+              <a
+                href="https://map.naver.com/v5/search/옥포대첩로%2020%20거제"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200"
+                aria-label="네이버 지도에서 브라운필드 로스터리 위치 보기 (새 창에서 열림)"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                </svg>
+                <span>네이버 지도에서 보기</span>
+              </a>
             </div>
             
             {/* Directions */}

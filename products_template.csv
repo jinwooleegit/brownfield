@@ -1,0 +1,11 @@
+id,name,price,originalPrice,description,coverImageLocal,url,inStock,featured,roastLevel,origin,weight
+1,브라운필드 시그니처 블렌드,15000,18000,"브라운필드만의 특별한 블렌딩으로 완성된 시그니처 원두입니다. 부드러운 바디감과 달콤한 후미가 특징이며, 에스프레소와 드립 모두에 적합합니다.",/images/signature-blend.jpg,https://smartstore.naver.com/brownfield/products/10847237969,TRUE,TRUE,Medium,Blend,200g
+2,에티오피아 예가체프 G1,18000,20000,"에티오피아 예가체프 지역의 최고급 G1 등급 원두입니다. 꽃향기와 과일향이 조화롭게 어우러진 밝고 깔끔한 산미가 특징입니다.",/images/ethiopia-yirgacheffe.jpg,https://smartstore.naver.com/brownfield/products/10847238069,TRUE,TRUE,Light,Ethiopia,200g
+3,과테말라 안티구아 SHB,16500,18500,"과테말라 안티구아 지역의 SHB(Strictly Hard Bean) 등급 원두입니다. 초콜릿과 견과류의 풍미가 깊고 진한 바디감을 자랑합니다.",/images/guatemala-antigua.jpg,https://smartstore.naver.com/brownfield/products/10847238169,TRUE,FALSE,Medium-Dark,Guatemala,200g
+4,콜롬비아 수프리모,17000,19000,"콜롬비아 최고급 수프리모 등급의 원두입니다. 균형잡힌 산미와 단맛, 그리고 부드러운 바디감이 조화를 이룹니다.",/images/colombia-supremo.jpg,https://smartstore.naver.com/brownfield/products/10847238269,TRUE,FALSE,Medium,Colombia,200g
+5,브라질 산토스 No.2,14000,16000,"브라질 산토스 지역의 No.2 등급 원두입니다. 견과류 향과 초콜릿 풍미가 특징이며, 부드럽고 균형잡힌 맛을 제공합니다.",/images/brazil-santos.jpg,https://smartstore.naver.com/brownfield/products/10847238369,TRUE,FALSE,Medium,Brazil,200g
+6,케냐 AA TOP,19000,21000,"케냐 최고급 AA TOP 등급의 원두입니다. 와인같은 산미와 베리류의 과일향이 특징이며, 깔끔하고 밝은 맛을 자랑합니다.",/images/kenya-aa.jpg,https://smartstore.naver.com/brownfield/products/10847238469,TRUE,FALSE,Light-Medium,Kenya,200g
+7,온두라스 마르칼라 SHG,16000,18000,"온두라스 마르칼라 지역의 SHG(Strictly High Grown) 등급 원두입니다. 달콤한 캐러멜 향과 부드러운 바디감이 특징입니다.",/images/honduras-marcala.jpg,https://smartstore.naver.com/brownfield/products/10847238569,TRUE,FALSE,Medium,Honduras,200g
+8,코스타리카 따라주 SHB,17500,19500,"코스타리카 따라주 지역의 SHB 등급 원두입니다. 밝은 산미와 꿀같은 단맛, 그리고 깔끔한 후미가 조화를 이룹니다.",/images/costarica-tarrazu.jpg,https://smartstore.naver.com/brownfield/products/10847238669,TRUE,FALSE,Medium,Costa Rica,200g
+9,자메이카 블루마운틴,35000,40000,"세계 3대 커피 중 하나인 자메이카 블루마운틴입니다. 부드럽고 균형잡힌 맛과 독특한 향이 특징입니다.",/images/jamaica-bluemountain.jpg,https://smartstore.naver.com/brownfield/products/10847238769,FALSE,FALSE,Medium,Jamaica,200g
+10,하와이 코나,28000,32000,"하와이 코나 지역에서 재배된 프리미엄 원두입니다. 부드러운 바디감과 견과류 향이 조화를 이룹니다.",/images/hawaii-kona.jpg,https://smartstore.naver.com/brownfield/products/10847238869,TRUE,FALSE,Medium,Hawaii,200g 

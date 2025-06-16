@@ -1,0 +1,84 @@
+구글과 네이버 사이트 등록 방법
+1. 구글 검색 엔진 등록 (Google Search Console)
+1단계: Google Search Console 접속
+https://search.google.com/search-console/ 접속
+Google 계정으로 로그인
+2단계: 속성 추가
+"속성 추가" 클릭
+"URL 접두어" 선택하고 사이트 URL 입력 (예: https://yourdomain.com)
+3단계: 소유권 확인
+HTML 파일 업로드 방법 또는 HTML 태그 방법 선택
+제공된 파일을 public 폴더에 업로드하거나 메타 태그를 index.html에 추가
+2. 네이버 검색 엔진 등록 (네이버 서치어드바이저)
+1단계: 네이버 서치어드바이저 접속
+https://searchadvisor.naver.com/ 접속
+네이버 계정으로 로그인
+2단계: 사이트 등록
+"웹마스터 도구" → "사이트 관리" → "사이트 등록"
+사이트 URL 입력
+3단계: 사이트 소유 확인
+HTML 파일 업로드 또는 메타 태그 방법으로 소유권 확인
+3. SEO 최적화 파일 생성
+사이트 등록을 위해 필요한 SEO 파일들을 생성해드리겠습니다:
+
+robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Block access to admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+
+sitemap.xml 
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://yourdomain.com/</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/#about</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/#menu</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/#contact</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>
+
+4. 등록 후 해야 할 일
+구글 Search Console에서:
+Sitemap 제출: https://yourdomain.com/sitemap.xml
+URL 검사 도구로 색인 요청
+모바일 친화성 테스트
+페이지 속도 확인
+네이버 서치어드바이저에서:
+사이트맵 제출
+RSS 제출 (블로그가 있는 경우)
+수집 요청
+사이트 최적화 검토
+5. 추가 SEO 팁
+구조화된 데이터 추가: 카페 정보를 위한 JSON-LD 스키마
+지역 SEO 최적화: Google My Business 등록
+소셜 미디어 메타 태그: Open Graph, Twitter Cards
+페이지 속도 최적화: 이미지 압축, 코드 최적화
+주의사항
+robots.txt와 sitemap.xml의 도메인 부분을 실제 도메인으로 변경해야 합니다
+사이트 배포 후 소유권 확인 파일을 업로드하거나 메타 태그를 추가해야 합니다
+등록 후 검색 결과에 나타나기까지 며칠에서 몇 주가 걸릴 수 있습니다

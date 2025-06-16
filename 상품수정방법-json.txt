@@ -1,0 +1,39 @@
+https://smartstore.naver.com/brownfield/products/11243398254
+https://smartstore.naver.com/brownfield/products/11243386954
+https://smartstore.naver.com/brownfield/products/11243383392
+https://smartstore.naver.com/brownfield/products/11122760442
+https://smartstore.naver.com/brownfield/products/11122487209
+https://smartstore.naver.com/brownfield/products/7874280702
+https://smartstore.naver.com/brownfield/products/6611687774
+https://smartstore.naver.com/brownfield/products/6533638194
+
+원두 상품 수정 방법 
+
+🎯 수정 예시:
+예를 들어, 첫 번째 상품의 정보를 바꾸고 싶다면:
+💡 수정 방법:
+src/data/products.json 파일을 열기
+원하는 상품의 정보를 수정
+파일 저장
+브라우저 새로고침 → 즉시 반영!
+🔄 주요 수정 포인트:
+가격 정보:
+"price": 15000,           // 판매가 (숫자만)
+"originalPrice": 18000,   // 원가 (할인 표시용)
+상품 정보:
+"name": "실제 상품명",
+"description": "실제 상품 설명",
+"origin": "실제 원산지",
+"weight": "실제 중량"
+링크:
+"price": 15000,           // 판매가 (숫자만)
+"originalPrice": 18000,   // 원가 (할인 표시용)
+추천 상품 설정:
+"name": "실제 상품명",
+"description": "실제 상품 설명",
+"origin": "실제 원산지",
+"weight": "실제 중량"
+재고 관리:
+"url": "실제 네이버 스마트스토어 상품 링크"
+이 파일만 수정하면 웹사이트의 모든 상품 정보가 실시간으로 업데이트됩니다!
+
