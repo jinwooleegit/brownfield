@@ -118,14 +118,25 @@ const InstaMenu = () => (
         </div>
       ))}
     </div>
-    <div className="mt-10 flex flex-col items-center">
-      <h3 className="text-xl font-bold text-green-700 mb-4">온라인 주문 안내</h3>
-      <p className="text-gray-700 mb-2">브라운필드 원두 및 제품은 아래 방법으로 주문하실 수 있습니다.</p>
-      <div className="flex flex-col gap-2 items-center mb-2">
-        <a href="mailto:bfield20@daum.net" className="text-pink-600 hover:text-pink-800 underline text-base font-medium">이메일 주문: bfield20@daum.net</a>
-        <a href="https://smartstore.naver.com/brownfield" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-900 underline text-base font-medium">네이버 스마트스토어 주문하기</a>
+    <div className="mt-14 flex justify-center w-full">
+      <div className="w-full max-w-xl bg-gradient-to-br from-pink-50 via-white to-green-50 border border-pink-200 rounded-2xl shadow-xl p-8 flex flex-col items-center">
+        <h3 className="text-2xl font-bold text-pink-700 mb-3 flex items-center gap-2">
+          <svg className="w-7 h-7 text-pink-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 22c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
+          온라인 주문 안내
+        </h3>
+        <p className="text-gray-700 mb-6 text-center">브라운필드 원두 및 제품은 아래 방법으로 주문하실 수 있습니다.</p>
+        <div className="flex flex-col sm:flex-row gap-4 w-full justify-center mb-4">
+          <a href="mailto:bfield20@daum.net" className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 text-white font-semibold text-base shadow transition">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 12H8m8 0a4 4 0 11-8 0 4 4 0 018 0zm8 0a12 12 0 11-24 0 12 12 0 0124 0z"/></svg>
+            이메일 주문: bfield20@daum.net
+          </a>
+          <a href="https://smartstore.naver.com/brownfield" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-green-600 hover:bg-green-700 text-white font-semibold text-base shadow transition">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M3 3h18v18H3V3zm3 3h12v12H6V6z"/></svg>
+            네이버 스마트스토어 주문하기
+          </a>
+        </div>
+        <div className="text-sm text-gray-500 text-center mt-2">카페, 레스토랑, 사무실 등에 신선한 원두를 공급해드립니다.</div>
       </div>
-      <div className="text-sm text-gray-500">카페, 레스토랑, 사무실 등에 신선한 원두를 공급해드립니다.</div>
     </div>
   </section>
 );
