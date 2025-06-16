@@ -1,18 +1,8 @@
 import React from 'react';
+import Hero from './components/Hero';
 import StrengthsSquare from './components/StrengthsSquare';
+import Menu from './components/Menu';
 import products from './data/products.json';
-
-// 인스타그램 스타일 Hero
-const InstaHero = () => (
-  <section className="flex flex-col items-center justify-center py-16 bg-white border-b border-gray-100">
-    <div className="bg-white rounded-2xl shadow p-8 w-full max-w-xl flex flex-col items-center">
-      <img src="/images/brownfield-logo.jpg" alt="브라운필드 로고" className="w-24 h-24 rounded-full border mb-4" />
-      <h1 className="text-4xl font-bold font-serif text-gray-900 mb-2">brownfield_roasters</h1>
-      <p className="text-gray-700 text-center mb-4">거제도에서 직접 로스팅하는<br/>브라운필드 커피입니다 ☕</p>
-      <a href="https://www.instagram.com/brownfield_roasters/" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-800 underline text-base font-medium">@brownfield_roasters</a>
-    </div>
-  </section>
-);
 
 // 인스타그램 스타일 About
 const InstaAbout = () => (
@@ -25,8 +15,8 @@ const InstaAbout = () => (
   </section>
 );
 
-// 인스타그램 스타일 Menu
-const InstaMenu = () => (
+// 인스타그램 스타일 Menu Title (실제 메뉴는 컴포넌트로)
+const InstaMenuTitle = () => (
   <section className="py-12 bg-white border-b border-gray-100 flex justify-center">
     <div className="bg-white rounded-2xl shadow p-8 w-full max-w-2xl flex flex-col items-center">
       <h2 className="text-2xl font-bold text-gray-900 mb-2">Menu</h2>
@@ -107,10 +97,11 @@ const InstaFooter = () => (
 function AppSquare() {
   return (
     <div className="App bg-gray-50 min-h-screen">
-      <InstaHero />
+      <Hero />
       <StrengthsSquare />
       <InstaAbout />
-      <InstaMenu />
+      <InstaMenuTitle />
+      <Menu />
       <InstaProducts />
       <InstaGallery />
       <InstaContact />
