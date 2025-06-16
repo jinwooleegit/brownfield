@@ -194,12 +194,14 @@ const StrengthsSquareWithOrder = () => (
   <div id="strengths-order">
     <StrengthsSquare />
     <div className="max-w-2xl mx-auto mt-8 mb-12 bg-pink-50 border border-pink-200 rounded-2xl p-6 text-center shadow">
+      <h2 className="text-2xl font-bold text-pink-700 mb-4">원두 주문 안내</h2>
       <h3 className="text-xl font-bold text-pink-700 mb-2">주문 방법</h3>
       <p className="text-gray-700 mb-2">브라운필드 원두 및 제품은 아래 방법으로 주문하실 수 있습니다.</p>
       <div className="flex flex-col gap-2 items-center">
         <a href="mailto:bfield20@daum.net" className="text-pink-600 hover:text-pink-800 underline text-base font-medium">이메일 주문: bfield20@daum.net</a>
         <a href="https://smartstore.naver.com/brownfield" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-900 underline text-base font-medium">네이버 스마트스토어 주문하기</a>
       </div>
+      <div className="mt-4 text-sm text-gray-500">카페, 레스토랑, 사무실 등에 신선한 원두를 공급해드립니다.</div>
     </div>
   </div>
 );
