@@ -1,10 +1,10 @@
 import React from 'react';
 
 const images = [
-  '/images/rosting1.jpg',
-  '/images/rosting2.jpg',
-  '/images/rosting3.jpg',
-  '/images/rosting4.jpg',
+  '/images/roasting1.jpg',
+  '/images/roasting2.jpg',
+  '/images/roasting3.jpg',
+  '/images/roasting4.jpg',
 ];
 
 const StrengthsSquare = () => (
