@@ -119,6 +119,7 @@ const InstaMenu = () => (
       ))}
     </div>
     <div className="mt-10 flex flex-col items-center">
+      <h3 className="text-xl font-bold text-green-700 mb-4">온라인 주문 안내</h3>
       <div className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg flex items-center gap-2 mb-2 transition-colors duration-200">
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
