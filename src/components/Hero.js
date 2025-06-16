@@ -14,7 +14,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105"
         style={{
-          backgroundImage: `url('/images/SnapInsta.to_486756223_18048158288348183_299248871075608507_n.jpg')`,
+          backgroundImage: `url('/images/roasting1.jpg')`,
         }}
       >
         {/* Animated Dark Overlay */}
