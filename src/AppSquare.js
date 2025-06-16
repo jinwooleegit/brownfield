@@ -1,34 +1,138 @@
 import React from 'react';
 import Hero from './components/Hero';
 import StrengthsSquare from './components/StrengthsSquare';
-import Menu from './components/Menu';
 import products from './data/products.json';
 
-// 인스타그램 스타일 About
+// --- About Section (Instagram Style, Rich Content) ---
+const aboutCards = [
+  {
+    title: '거제도에서 시작된 여정',
+    text: 'Brownfield Roasters는 거제도의 아름다운 자연 속에서 시작된 스페셜티 커피 로스터리입니다. 우리는 커피가 단순한 음료를 넘어서 사람들을 연결하는 특별한 매개체라고 믿습니다.',
+    img: '/images/SnapInsta.to_497679542_18052712129348183_413711426659425542_n.jpg',
+  },
+  {
+    title: '소통과 연결의 공간',
+    text: '각자의 삶을 살아가는 사람들이 커피라는 갈색의 매개체를 통해 만나고, 소통하며, 새로운 관계를 형성해 나가는 따뜻한 공간을 만들어갑니다.',
+    img: '/images/SnapInsta.to_486756223_18048158288348183_299248871075608507_n.jpg',
+  },
+  {
+    title: '정성과 사랑이 담긴 한 잔',
+    text: '신선하게 로스팅된 원두와 정성스럽게 내린 커피 한 잔으로 여러분의 일상에 작은 행복과 따뜻한 소통의 순간을 선사합니다.',
+    img: '/images/SnapInsta.to_504064724_18054766886348183_2054420973040220017_n.jpg',
+  },
+];
 const InstaAbout = () => (
-  <section className="py-12 bg-white border-b border-gray-100 flex justify-center">
-    <div className="bg-white rounded-2xl shadow p-8 w-full max-w-2xl flex flex-col items-center">
-      <h2 className="text-2xl font-bold text-gray-900 mb-2">About</h2>
-      <p className="text-gray-700 text-center mb-2">브라운필드는 커피를 통해 사람들을 연결하는 공간입니다.<br/>직접 로스팅한 원두로 매일 신선한 커피를 제공합니다.</p>
-      <span className="text-xs text-gray-400">#로스팅 #스페셜티 #거제도</span>
+  <section id="about" className="py-12 bg-white border-b border-gray-100 flex flex-col items-center">
+    <h2 className="text-3xl font-bold text-gray-900 mb-8">About</h2>
+    <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      {aboutCards.map((card, idx) => (
+        <div key={card.title} className="bg-white rounded-2xl shadow border border-gray-100 p-4 flex flex-col items-center">
+          <div className="w-full aspect-square bg-gray-100 rounded-xl overflow-hidden mb-3 flex items-center justify-center">
+            <img src={card.img} alt={card.title} className="object-cover w-full h-full" loading="lazy" decoding="async" />
+          </div>
+          <div className="w-full text-center">
+            <div className="font-bold text-lg text-gray-900 mb-2">{card.title}</div>
+            <div className="text-gray-700 text-sm mb-2">{card.text}</div>
+          </div>
+        </div>
+      ))}
+    </div>
+    <div className="flex gap-2 mb-2">
+      <a href="#menu" className="text-pink-600 hover:text-pink-800 underline text-sm">#로스팅</a>
+      <a href="#products" className="text-pink-600 hover:text-pink-800 underline text-sm">#스페셜티</a>
+      <a href="#about" className="text-pink-600 hover:text-pink-800 underline text-sm">#거제도</a>
     </div>
   </section>
 );
 
-// 인스타그램 스타일 Menu Title (실제 메뉴는 컴포넌트로)
-const InstaMenuTitle = () => (
-  <section className="py-12 bg-white border-b border-gray-100 flex justify-center">
-    <div className="bg-white rounded-2xl shadow p-8 w-full max-w-2xl flex flex-col items-center">
-      <h2 className="text-2xl font-bold text-gray-900 mb-2">Menu</h2>
-      <p className="text-gray-700 text-center mb-4">브라운필드의 인기 메뉴를 만나보세요!</p>
-      <span className="text-xs text-gray-400">#아메리카노 #라떼 #브루잉</span>
+// --- Menu Section (Instagram Style, Full Content, Category Nav) ---
+const menuData = [
+  {
+    category: "에스프레소 베이스",
+    items: [
+      { name: "에스프레소", price: "3,000", description: "진한 에스프레소 샷" },
+      { name: "아메리카노", price: "4,000", description: "깔끔하고 진한 아메리카노" },
+      { name: "카페라떼", price: "4,500", description: "부드러운 우유와 에스프레소의 조화" },
+      { name: "카푸치노", price: "4,500", description: "풍성한 거품과 함께하는 클래식" },
+      { name: "카페모카", price: "5,000", description: "달콤한 초콜릿과 커피의 만남" },
+    ]
+  },
+  {
+    category: "스페셜티 커피",
+    items: [
+      { name: "핸드드립 커피", price: "6,000", description: "바리스타가 직접 내리는 특별한 커피" },
+      { name: "콜드브루", price: "4,500", description: "12시간 저온 추출한 부드러운 커피" },
+      { name: "아인슈페너", price: "5,500", description: "진한 커피 위에 올린 휘핑크림" },
+      { name: "플랫화이트", price: "5,000", description: "진한 에스프레소와 벨벳 우유" },
+    ]
+  },
+  {
+    category: "논커피 음료",
+    items: [
+      { name: "핫초콜릿", price: "4,000", description: "진한 초콜릿의 달콤함" },
+      { name: "차이라떼", price: "4,500", description: "향신료가 가득한 인도식 밀크티" },
+      { name: "그린티라떼", price: "4,500", description: "부드러운 녹차와 우유" },
+      { name: "레몬에이드", price: "4,000", description: "상큼한 레몬의 청량감" },
+    ]
+  },
+  {
+    category: "디저트",
+    items: [
+      { name: "크루아상", price: "3,500", description: "바삭하고 버터향 가득한" },
+      { name: "머핀", price: "3,000", description: "촉촉하고 달콤한 홈메이드" },
+      { name: "치즈케이크", price: "4,500", description: "부드럽고 진한 치즈의 맛" },
+      { name: "브라우니", price: "4,000", description: "진한 초콜릿의 깊은 맛" },
+    ]
+  }
+];
+const [espresso, specialty, noncoffee, dessert] = menuData;
+const menuNav = [
+  { label: '에스프레소', anchor: 'espresso' },
+  { label: '스페셜티', anchor: 'specialty' },
+  { label: '논커피', anchor: 'noncoffee' },
+  { label: '디저트', anchor: 'dessert' },
+];
+const InstaMenu = () => (
+  <section id="menu" className="py-12 bg-white border-b border-gray-100 flex flex-col items-center">
+    <h2 className="text-3xl font-bold text-gray-900 mb-4">Menu</h2>
+    <div className="flex gap-3 mb-8 flex-wrap justify-center">
+      {menuNav.map(nav => (
+        <a key={nav.anchor} href={`#${nav.anchor}`} className="px-4 py-2 rounded-full bg-pink-50 text-pink-600 hover:bg-pink-100 text-sm font-medium border border-pink-200 transition">{nav.label}</a>
+      ))}
+    </div>
+    <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8">
+      {menuData.map((cat, i) => (
+        <div key={cat.category} id={menuNav[i].anchor} className="bg-white rounded-2xl shadow border border-gray-100 p-6 flex flex-col items-center">
+          <h3 className="font-bold text-lg text-gray-900 mb-4">{cat.category}</h3>
+          <div className="w-full flex flex-col gap-4">
+            {cat.items.map(item => (
+              <div key={item.name} className="flex flex-col sm:flex-row sm:items-center justify-between w-full bg-pink-50 rounded-xl p-4 shadow-sm">
+                <div className="flex-1">
+                  <div className="font-semibold text-gray-900">{item.name}</div>
+                  <div className="text-gray-600 text-sm mb-1">{item.description}</div>
+                </div>
+                <div className="ml-0 sm:ml-4 mt-2 sm:mt-0 text-pink-600 font-bold text-lg">{item.price}원</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+    <div className="mt-10 flex flex-col items-center">
+      <div className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg flex items-center gap-2 mb-2 transition-colors duration-200">
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+        </svg>
+        <a href="https://smartstore.naver.com/brownfield" target="_blank" rel="noopener noreferrer" className="font-medium">네이버 스마트스토어에서 주문하기</a>
+      </div>
+      <div className="text-sm text-gray-500">카페, 레스토랑, 사무실 등에 신선한 원두를 공급해드립니다. <a href="mailto:bfield20@daum.net" className="underline text-pink-600">bfield20@daum.net</a></div>
     </div>
   </section>
 );
 
-// 인스타그램 스타일 Products (피드형)
+// --- Products, Gallery, Contact, Footer는 이전과 동일 ---
 const InstaProducts = () => (
-  <section className="py-12 bg-white border-b border-gray-100 flex justify-center">
+  <section id="products" className="py-12 bg-white border-b border-gray-100 flex justify-center">
     <div className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       {products.slice(0, 6).map((product, idx) => (
         <div key={product.id} className="bg-white rounded-2xl shadow border border-gray-100 p-4 flex flex-col items-center">
@@ -54,7 +158,6 @@ const InstaProducts = () => (
   </section>
 );
 
-// 인스타그램 스타일 Gallery (피드형)
 const galleryImages = [
   '/images/roasting1.jpg',
   '/images/roasting2.jpg',
@@ -76,7 +179,6 @@ const InstaGallery = () => (
   </section>
 );
 
-// 인스타그램 스타일 Contact
 const InstaContact = () => (
   <section className="py-12 bg-white border-b border-gray-100 flex justify-center">
     <div className="bg-white rounded-2xl shadow p-8 w-full max-w-2xl flex flex-col items-center">
@@ -87,7 +189,6 @@ const InstaContact = () => (
   </section>
 );
 
-// 인스타그램 스타일 Footer
 const InstaFooter = () => (
   <footer className="py-8 bg-white border-t border-gray-100 text-center text-gray-400 text-sm">
     &copy; {new Date().getFullYear()} brownfield_roasters. All rights reserved.
@@ -100,8 +201,7 @@ function AppSquare() {
       <Hero />
       <StrengthsSquare />
       <InstaAbout />
-      <InstaMenuTitle />
-      <Menu />
+      <InstaMenu />
       <InstaProducts />
       <InstaGallery />
       <InstaContact />
