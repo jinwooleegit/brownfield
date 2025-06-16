@@ -189,6 +189,32 @@ const InstaContact = () => (
   </section>
 );
 
+// --- StrengthsSquare with order instructions ---
+const StrengthsSquareWithOrder = () => (
+  <>
+    <StrengthsSquare />
+    <div className="max-w-2xl mx-auto mt-8 mb-12 bg-pink-50 border border-pink-200 rounded-2xl p-6 text-center shadow">
+      <h3 className="text-xl font-bold text-pink-700 mb-2">주문 방법</h3>
+      <p className="text-gray-700 mb-2">브라운필드 원두 및 제품은 아래 방법으로 주문하실 수 있습니다.</p>
+      <div className="flex flex-col gap-2 items-center">
+        <a href="mailto:bfield20@daum.net" className="text-pink-600 hover:text-pink-800 underline text-base font-medium">이메일 주문: bfield20@daum.net</a>
+        <a href="https://smartstore.naver.com/brownfield" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-900 underline text-base font-medium">네이버 스마트스토어 주문하기</a>
+      </div>
+    </div>
+  </>
+);
+
+// --- Instagram Link at the Bottom ---
+const InstaInstagramLink = () => (
+  <div className="w-full flex justify-center py-16 bg-gradient-to-r from-pink-100 via-white to-pink-100 border-t border-pink-200">
+    <a href="https://www.instagram.com/brownfield_roasters/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-2">
+      <span className="text-2xl font-bold text-pink-700">인스타그램(@brownfield_roasters)</span>
+      <span className="text-lg text-gray-700">에서 더 많은 사진 보기</span>
+      <svg className="w-10 h-10 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zm0 1.5h8.5A4.25 4.25 0 0120.5 7.75v8.5a4.25 4.25 0 01-4.25 4.25h-8.5A4.25 4.25 0 013.5 16.25v-8.5A4.25 4.25 0 017.75 3.5zm8.25 2.25a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/></svg>
+    </a>
+  </div>
+);
+
 const InstaFooter = () => (
   <footer className="py-8 bg-white border-t border-gray-100 text-center text-gray-400 text-sm">
     &copy; {new Date().getFullYear()} brownfield_roasters. All rights reserved.
@@ -199,12 +225,12 @@ function AppSquare() {
   return (
     <div className="App bg-gray-50 min-h-screen">
       <Hero />
-      <StrengthsSquare />
+      <StrengthsSquareWithOrder />
       <InstaAbout />
       <InstaMenu />
       <InstaProducts />
-      <InstaGallery />
       <InstaContact />
+      <InstaInstagramLink />
       <InstaFooter />
     </div>
   );
