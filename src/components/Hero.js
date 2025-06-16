@@ -65,7 +65,7 @@ const Hero = () => {
                   그중 우리는 <span className="font-bold text-coffee-200 bg-coffee-600/20 px-3 py-1 rounded-lg">커피라는 갈색의 매개체</span>를 통해
                 </p>
                 <p className="text-xl md:text-2xl text-coffee-100 leading-relaxed font-light">
-                  교류하고 소통합니다 <span className="text-2xl animate-bounce inline-block">☕</span>
+                  교류하고 소통합니다
                 </p>
               </div>
             </div>
@@ -80,10 +80,10 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-coffee-400 to-coffee-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
               </button>
               <button
-                onClick={() => scrollToSection('about')}
+                onClick={() => scrollToSection('strengths-order')}
                 className="group relative bg-transparent border-2 border-coffee-200 text-coffee-200 hover:bg-coffee-200 hover:text-brown-800 px-10 py-5 text-lg font-semibold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 backdrop-blur-sm"
               >
-                <span className="relative z-10">더 알아보기</span>
+                <span className="relative z-10">원두 주문하기</span>
                 <div className="absolute inset-0 bg-coffee-200 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
             </div>
